@@ -5,6 +5,12 @@ const userWord = prompt("Inserisci una parola");
 
 // utilizzo il ciclo for per prendere una lettera alla volta e le aggiungo a una nuova variabile
 // dopo verifico se la nuova variabile equivale alla variabile iniziale
+
+/**
+ * scopri se una parola è palindroma
+ * @param {string} word
+ * @returns true se è palindroma, false se non lo è
+ */
 function isPalindroma(word) {
   let reverseWord = "";
   for (let i = word.length - 1; i >= 0; i--) {

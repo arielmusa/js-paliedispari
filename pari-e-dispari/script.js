@@ -5,11 +5,22 @@ Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto. */
 
+/**
+ * inserisci min e max per generare un numero random, max non è incluso
+ * @param {integer} min
+ * @param {integer} max
+ * @returns numero random
+ */
 function generateNumber(min, max) {
   const randomNumber = Math.floor(Math.random() * (max - min) + min);
   return randomNumber;
 }
 
+/**
+ * scopri se un numero è pari o dispari
+ * @param {integer} number
+ * @returns true se è pari, false se è dispari
+ */
 function isEven(number) {
   if (number % 2 === 0) return true;
   else return false;
